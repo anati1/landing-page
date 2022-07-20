@@ -1,4 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 body {
+    height: 100vh;
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
@@ -6,6 +9,10 @@ body {
 
 ul {
     list-style-type: none;
+    margin: 0;
+    padding: 0;
+    gap: 16px;
+    display: flex;
 }
 
 a {
@@ -13,13 +20,72 @@ a {
     color: #E5E7EB;
 }
 
+h1 {
+    
+    margin: 0px;
+}
+
+h2 {
+    margin-bottom: 3px;
+    padding-right: 3px;
+}
+
+p {
+    margin-top: 3px;
+}
+
+.header {
+    padding: 8px 72px;
+}
+
 .header, .footer {
     background-color: #1F2937;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 16px;
+}
+
+.left-nav {
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 52px;
+}
+
+.right-nav {
+    padding: 15px 0px;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
 }
 
 .logo {
     font-size: 24px;
     color: #F9FAF8;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    padding: 32px 0px 32px 0px;
+}
+
+.left-hero {
+    flex-basis: 1;
+    padding: 0px 52px 24px 52px;
+}
+
+.right-hero {
+    flex-basis: 1;
+    align-self: flex-start;
+}
+
+.right-hero img {
+    width: 400px;
+    height: 200px;
+    border-radius: 0px;
 }
 
 .hero h1 {
@@ -28,16 +94,18 @@ a {
     color: #F9FAF8;
 }
 
-.header p {
+.hero p {
     font-size: 18px;
     color: #E5E7EB;
 }
 
 img {
-    width: 300px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     background: lightgray;
+    border-radius: 15px;
 }
+
 button {
     background-color: #3882F6;  
     color: white;
@@ -46,8 +114,83 @@ button {
     border: none;
 }
 
+.hero {
+    display: flex;
+}
+
+.information {
+    padding: 36px 52px;   
+}
+
+.information .title {
+    text-align: center;
+}
+
+.items-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 32px;
+    padding: 32px 0px;
+}
+
 .information .title {
     font-size: 36px;
     font-weight: bolder;
     color: #1F2937;
+}
+
+.information .item {
+    max-width: 150px;
+}
+
+.testmonial {
+    background-color: #E5E7EB;
+    padding: 72px 222px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.testmonial cite {
+    font-size: 30px;
+    font-weight: 400;
+    color: #1F2937;
+    font-style: italic;
+}
+
+.testmonial p {
+    align-self: flex-end;
+    font-weight: 600;
+}
+
+.action {
+    display: flex;
+    justify-content: center;
+}
+
+.action-container {
+    background-color: #3882F6;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px;
+    color: #E5E7EB;
+    margin: 64px 42px;
+    padding: 24px 8px 24px 40px;
+}
+
+.action-container button {
+    border: 1px solid #E5E7EB;
+}
+
+.sign-up-button {
+    padding-right: 52px;
+}
+
+.footer {
+    color: #E5E7EB;
+    text-align: center;
+    padding: 24px;
 }
